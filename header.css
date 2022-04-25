@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+}
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #272635;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.main nav, a {
+    text-decoration: none;
+    color: #E8E9F3;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-list a {
+    padding: 10px;
+    border-right: #E8E9F3 solid 1px;
+}
+
+.nav-list li:last-of-type a {
+    border-right: none;
+}
+
+.full-width {
+    display: none;
+}
+
+.short-width {
+    display: flex;
+}
+
+.sub-nav {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.company-name {
+    font-size: 40px;
+    color: #272635;
+    margin: 10px;
+}
+
+.search-form {
+    display: flex;
+    flex-grow: 1;
+}
+
+input {
+    display: flex;
+    background-color: #E8E9F3;
+    border: none;
+    border-bottom: #272635 solid;
+    margin-top: 10px;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+button {
+    background-color: #272635;
+    border: none;
+    border-radius: 20%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.material-icons {
+    color: #E8E9F3;
+}
+
+.credit-offer {
+    display: flex;
+    align-items: center;
+    background-color: red;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    .full-width {
+        display: flex;
+    }
+    
+    .short-width {
+        display: none;
+    }
+}
